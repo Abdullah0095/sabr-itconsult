@@ -8,7 +8,7 @@ const ContactPage = () => {
 </svg>
           <h1 className="text-5xl font-bold text-black">Contact Us</h1>
           <p className="py-6 text-black">
-            We're here to help and answer any questions you might have. We look
+            We are here to help and answer any questions you might have. We look
             forward to hearing from you!
           </p>
           <p className="text-black py-1">Ankersgade 12C, 1, 8000 Aaarhus</p>
