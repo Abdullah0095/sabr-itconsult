@@ -3,7 +3,7 @@ const ContactPage = () => {
     <div className="hero min-h-screen bg-gray-100 py-16">
       <div className="hero-content grid md:grid-cols-2">
         <div className="text-center lg:text-left">
-          <p className="py-3  text-orange-600">How can we help you?</p> <svg class="animate-bounce w-6 h-6 ...">
+          <p className="py-3  text-orange-600">How can we help you sir?</p> <svg class="animate-bounce w-6 h-6 ...">
   help
 </svg>
           <h1 className="text-5xl font-bold text-black">Contact Us</h1>
