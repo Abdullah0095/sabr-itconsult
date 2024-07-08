@@ -29,7 +29,7 @@ const ServicePage = () => {
   ];
 
   return (
-    <div className="bg-stone-200 py-16">
+    <div className="bg-stone-200 py-24">
       <h1 className="text-center text-4xl py-5 text-black">
         services That we Provide
       </h1>

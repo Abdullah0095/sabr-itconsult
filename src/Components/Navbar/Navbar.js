@@ -2,14 +2,14 @@ import Link from "next/link";
 import React from "react";
 
 const Navbar = () => {
-  const navList = <>
-  
-  <li><Link className="hover:bg-gray-900 text-lg" href="/">Home</Link></li>
-  <li><Link className="hover:bg-gray-900 text-lg" href="/service">Service</Link></li>
-  <li><Link className="hover:bg-gray-900 text-lg" href="/aboutUs">About Us</Link></li>
-  <li><Link className="hover:bg-gray-900 text-lg" href="/contact">Contact</Link></li>
-
-  </>;
+  const navList = (
+    <>
+      <li><Link className="hover:bg-gray-900 text-lg" href="/">Home</Link></li>
+      <li><Link className="hover:bg-gray-900 text-lg" href="/service">Service</Link></li>
+      <li><Link className="hover:bg-gray-900 text-lg" href="/aboutUs">About Us</Link></li>
+      <li><Link className="hover:bg-gray-900 text-lg" href="/contact">Contact</Link></li>
+    </>
+  );
 
   return (
     // <div>
@@ -48,19 +48,38 @@ const Navbar = () => {
     //       <Link href="/" className="btn btn-ghost ml-[-30px] text-2xl text-white">sabrIT</Link>
     //     </div>
     //   </div>
-      
+
     // </div>
-    <div className="navbar bg-slate-900 z-[1] fixed top-0 left-0 right-0">
-    <div className="navbar-start">
-      <Link href="/" className="text-white">Home</Link>
+
+    <div className="py-4 grid grid-cols-2 fixed top-0 left-0 right-0 bg-slate-900 z-[1]">
+      <section>
+        <div className="drawer">
+          <input id="my-drawer" type="checkbox" className="drawer-toggle" />
+          <div className="drawer-content">
+            {/* Page content here */}
+            <label
+              htmlFor="my-drawer"
+              className="btn btn-primary drawer-button"
+            >
+              Menu Bar
+            </label>
+          </div>
+          <div className="drawer-side z-[1]">
+            <label
+              htmlFor="my-drawer"
+              aria-label="close sidebar"
+              className="drawer-overlay"
+            ></label>
+            <ul className="menu bg-base-200  min-h-full w-48 md:w-80 p-4">
+              {navList}
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section>
+        <h1>jushufgusyguhu</h1>
+      </section>
     </div>
-    <div className="navbar-center">
-      <Link href="/" className="text-white">sabrIT</Link>
-    </div>
-    <div className="navbar-end">
-      <Link href="/service" className="text-white">Service</Link>
-    </div>
-  </div>
   );
 };
 

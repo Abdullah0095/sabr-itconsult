@@ -50,8 +50,8 @@ const AboutUsPage = () => {
   ];
 
   return (
-    <div className="bg-slate-700 min-h-screen">
-      <div className="text-5xl text-center text-white p-5 italic ">Our Team</div>
+    <div className="bg-slate-700 min-h-screen py-24">
+      <div className="text-3xl text-center text-white p-5 italic ">Our Team</div>
       <section className="grid md:grid-cols-4 gap-4">
         {serviceData.map((data) => (
           <ServiceCard key={data.id} data={data}></ServiceCard>
