@@ -1,6 +1,6 @@
 import React from "react";
 
-const page = () => {
+const ServicePage = () => {
   const serviceData = [
     {
       id: "1",
@@ -29,7 +29,7 @@ const page = () => {
   ];
 
   return (
-    <div className="bg-gray-200 py-16">
+    <div className="bg-stone-200 py-16">
       <h1 className="text-center text-4xl py-5 text-black">
         services That we Provide
       </h1>
@@ -59,4 +59,4 @@ const ServiceDetail = ({ service }) => {
   );
 };
 
-export default page;
+export default ServicePage;
