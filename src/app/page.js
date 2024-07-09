@@ -1,13 +1,13 @@
 "use client";
 
 import Lottie from "lottie-react";
-import MarketingAnimation from "../marketing.json";
+import MarketingAnimation from "../Lotties/marketing.json";
 
 const page = () => {
   return (
-    <div className="bg-black">
-      <div className="grid  grid-cols-1 md:grid-cols-2 place-items-center h-screen">
-        <div className="animate-charcter hidden md:block md:mx-16 text-lg  md:text-5xl font-bold">
+    <div className="bg-black py-16">
+      <div className="grid  md:grid-cols-2 place-items-center min-h-screen">
+        <div className="animate-charcter hidden md:block text-lg  md:text-5xl font-bold">
           Unlock Your <br />
           Online Growth <br />
           potential
